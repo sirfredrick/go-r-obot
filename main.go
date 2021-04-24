@@ -70,8 +70,12 @@ func sendMessage(s session, m *discordgo.MessageCreate, botID string) {
 
 func ready(s *discordgo.Session, event *discordgo.Ready) {
 	t := 0
+	/*
+	 * Update Name with a link to your source code if modified. See LICENSE
+	 * file for details.
+	 */
 	a := discordgo.Activity{
-		Name: "for Subreddits",
+		Name: "for Subreddits	https://github.com/sirfredrick/go-r-obot",
 		Type: discordgo.ActivityTypeListening,
 		URL: "",
 	}
